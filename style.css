@@ -8,7 +8,7 @@
 }
 
 body {
-/*    background-color: #080808 !important;*/
+    /*    background-color: #080808 !important;*/
 }
 
 code,
@@ -41,15 +41,20 @@ div:has(> .bigusername) img.inlineimg {
     overflow: hidden;
     border: 1px solid #C8C8C8 !important;
 }
+
 #posts .page div > table .tbody {
     background: white !important;
 }
-#posts .page div > table tr, #posts .page div > table td {
+
+#posts .page div > table tr,
+#posts .page div > table td {
     background: transparent !important;
 }
+
 .vb_postbit div:has(> table) .smallfont {
     display: none;
 }
+
 /*Quotes*/
 .vb_postbit div table {
     background: linear-gradient(0deg, rgba(31, 31, 31, 1) 0%, rgba(50, 50, 50, 1) 100%) !important;
@@ -63,9 +68,12 @@ div:has(> .bigusername) img.inlineimg {
     background: linear-gradient(0deg, rgba(66, 66, 66, 1) 0%, rgba(77, 77, 77, 1) 100%) !important;
 }
 
-td:has(> .vb_postbit) .spacer, td:has(> .vb_postbit) .hr, td:has(> .vb_postbit) .smallfont strong {
+td:has(> .vb_postbit) .spacer,
+td:has(> .vb_postbit) .hr,
+td:has(> .vb_postbit) .smallfont strong {
     display: none;
 }
+
 .vb_postbit div table tr td div:first-child {
     position: absolute;
     opacity: 0;
@@ -141,15 +149,19 @@ a:visited {
 .tborder {
     border: 0 !important;
 }
+
 .tborder .vbmenu_control * {
     color: white !important;
     text-decoration: none !important;
     font-weight: normal !important;
 }
+
 .vbmenu_popup {
     box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.4), 0 0px 0 1px rgba(10, 10, 10, 0.02);
 }
-#threadrating, #displaymodes {
+
+#threadrating,
+#displaymodes {
     display: none;
 }
 
@@ -170,6 +182,7 @@ a[rel=nofollow]:has(img[title="Reply"])::after {
     display: inline-block !important;
     font-weight: normal !important;
 }
+
 select {
     padding: 10px 25px;
     margin: 0 10px;
@@ -182,6 +195,7 @@ select {
     cursor: pointer;
     border: 0 !important;
 }
+
 .button:not(input[type=text]) {
     border: 0;
     cursor: pointer;
@@ -192,6 +206,7 @@ select {
     display: inline-block !important;
     font-weight: normal !important;
 }
+
 input[name=search] {
     width: auto !important;
 }
@@ -205,7 +220,7 @@ a[rel=nofollow]:has(img[title="Reply"]) img {
 }
 
 td:has(.smallfont .postbit_box) {
-/*    background: red !important;*/
+    /*    background: red !important;*/
     border-bottom: 1px solid #C8C8C8 !important;
 }
 
@@ -218,30 +233,39 @@ td:has(.smallfont .postbit_box) td.alt2 img {
     height: 3em;
     border-radius: 100px;
 }
+
 .tfoot:has(select[name=styleid]) {
     display: none;
 }
+
 .tfoot {
     background: white !important;
 }
+
 small {
     font-size: 0.7em !important;
 }
-form[action="search.php"] input[name=query] {
+
+form[action="search.php"] input[name=query],
+form[action="forums/search.php"] input[name=query] {
     width: 15em !important;
 }
+
 input[type=text] {
     padding: 10px 21px;
     margin: 0 10px;
     border-radius: 5px;
     border: 2px solid #C8C8C8;
 }
+
 input::placeholder {
     color: #C8C8C8;
 }
+
 input[type=text]:focus {
     border-color: #007CFF;
 }
+
 .page #content .tborder {
     border-radius: 15px !important;
     overflow: hidden;

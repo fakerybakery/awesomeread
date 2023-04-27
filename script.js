@@ -17,8 +17,8 @@ window.onload = function() {
         t.textContent = "Posted by " + els[i].querySelector('strong').textContent;
         els[i].parentElement.appendChild(t);
     }
-    if (document.querySelector('form[action="search.php"] input[name=query]')) {
-        document.querySelector('form[action="search.php"] input[name=query]').setAttribute('placeholder', 'Search Forums...');
+    if (document.querySelector('form[action="search.php"] input[name=query], form[action="forums/search.php"] input[name=query]')) {
+        document.querySelector('form[action="search.php"] input[name=query], form[action="forums/search.php"] input[name=query').setAttribute('placeholder', 'Search Forums...');
     }
     if (document.querySelector('.tfoot .smallfont strong')) {
         document.querySelector('.tfoot .smallfont strong').innerHTML += ' - <a href="javascript:alert(\'Website styling enhanced with AwesomeRead, an independent browser extension by mrfakename. AwesomeRead is not affiliated with MobileRead forums. If you like AwesomeRead, please give us a 5 star review on your browser extension store!\')">AwesomeRead</a> - <a href="https://github.com/fakerybakery/awesomeread" target="_blank">AwesomeRead GitHub</a>';
