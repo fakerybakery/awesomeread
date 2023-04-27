@@ -14,6 +14,7 @@ I'm planning to publish this to the Chrome Web Store soon, but for now, download
 * Format "New Post" section
 * Add more styling for the post lists/search results
 * Better styling the homepage
+* Style the "Menus" - e.g. "Forum Tools" or "Search this Forum" menu...
 
 ## Bugs
 Please create a GitHub issue to report bugs. Thank you!
