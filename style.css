@@ -252,7 +252,7 @@ form[action="forums/search.php"] input[name=query] {
     width: 15em !important;
 }
 
-input[type=text] {
+input[type=text], input[type=password] {
     padding: 10px 21px;
     margin: 0 10px;
     border-radius: 5px;
@@ -263,7 +263,7 @@ input::placeholder {
     color: #C8C8C8;
 }
 
-input[type=text]:focus {
+input[type=text]:focus, input[type=password]:focus {
     border-color: #007CFF;
 }
 
