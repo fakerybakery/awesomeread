@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&family=Source+Code+Pro&display=swap');
+
+* {
+    font-family: 'Golos Text', 'system-ui', sans-serif !important;
+    font-size: 1em !important;
+    box-sizing: border-box !important;
+    outline: none;
+}
+
+body {
+/*    background-color: #080808 !important;*/
+}
+
+code,
+pre {
+    font-family: 'Source Code Pro', monospace !important;
+    background: #353535 !important;
+    color: white !important;
+    width: 100% !important;
+    /*    max-width: 300px;*/
+    border: 0 !important;
+    border-radius: 10px;
+    padding: 10px 15px !important;
+    max-height: none !important;
+    height: auto !important;
+    word-wrap: normal;
+    white-space: pre-wrap;
+}
+
+div:has(> pre) div {
+    display: none;
+    width: 100% !important;
+}
+
+div:has(> .bigusername) img.inlineimg {
+    display: none;
+}
+
+#posts .page div > table {
+    border-radius: 15px !important;
+    overflow: hidden;
+    border: 1px solid #C8C8C8 !important;
+}
+#posts .page div > table .tbody {
+    background: white !important;
+}
+#posts .page div > table tr, #posts .page div > table td {
+    background: transparent !important;
+}
+.vb_postbit div:has(> table) .smallfont {
+    display: none;
+}
+/*Quotes*/
+.vb_postbit div table {
+    background: linear-gradient(0deg, rgba(31, 31, 31, 1) 0%, rgba(50, 50, 50, 1) 100%) !important;
+    border-radius: 15px;
+    padding: 10px 25px;
+    position: relative;
+    font-style: normal !important;
+}
+
+.vb_postbit div table:hover {
+    background: linear-gradient(0deg, rgba(66, 66, 66, 1) 0%, rgba(77, 77, 77, 1) 100%) !important;
+}
+
+td:has(> .vb_postbit) .spacer, td:has(> .vb_postbit) .hr, td:has(> .vb_postbit) .smallfont strong {
+    display: none;
+}
+.vb_postbit div table tr td div:first-child {
+    position: absolute;
+    opacity: 0;
+    font-size: 0 !important;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height 100%;
+    /*    pointer-events: none;*/
+}
+
+.vb_postbit div table tr td div:first-child a {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height 100%;
+    /*    pointer-events: all;*/
+}
+
+.vb_postbit div table * {
+    background-color: transparent !important;
+    border: 0 !important;
+    color: white !important;
+    font-style: normal !important;
+}
+
+#posts .page div div .tborder .thead:has(.normal) {
+    display: none;
+}
+
+a {
+    color: #007CFF !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    border: 0 !important;
+}
+
+a:hover {
+    text-decoration: underline !important;
+    border: 0 !important;
+}
+
+a:visited {
+    color: #006CDE;
+}
+
+.tborder .tcat {
+    display: none !important;
+}
+
+.tborder .vbmenu_control {
+    background: none !important;
+    cursor: default;
+}
+
+.tborder .vbmenu_control a {
+    background: #007CFF !important;
+    color: white !important;
+    border-radius: 5px;
+    padding: 10px 25px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tborder {
+    border: 0 !important;
+}
+.tborder .vbmenu_control * {
+    color: white !important;
+    text-decoration: none !important;
+    font-weight: normal !important;
+}
+.vbmenu_popup {
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.4), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+}
+#threadrating, #displaymodes {
+    display: none;
+}
+
+.vbmenu_control:has(#navbar_search) {
+    display: none;
+}
+
+.tborder .vbmenu_control img {
+    display: none !important;
+}
+
+a[rel=nofollow]:has(img[title="Reply"])::after {
+    content: '+ New Reply';
+    background: #007CFF !important;
+    color: white !important;
+    border-radius: 5px;
+    padding: 10px 25px;
+    display: inline-block !important;
+    font-weight: normal !important;
+}
+select {
+    padding: 10px 25px;
+    margin: 0 10px;
+    background: #007CFF !important;
+    color: white !important;
+    border-radius: 5px;
+    padding: 10px 25px;
+    display: inline-block !important;
+    font-weight: normal !important;
+    cursor: pointer;
+    border: 0 !important;
+}
+.button:not(input[type=text]) {
+    border: 0;
+    cursor: pointer;
+    background: #007CFF !important;
+    color: white !important;
+    border-radius: 5px;
+    padding: 10px 25px;
+    display: inline-block !important;
+    font-weight: normal !important;
+}
+input[name=search] {
+    width: auto !important;
+}
+
+a[rel=nofollow]:has(img[title="Reply"]) img {
+    display: none;
+}
+
+.vb_postbit div table code {
+    background: #353535 !important;
+}
+
+td:has(.smallfont .postbit_box) {
+/*    background: red !important;*/
+    border-bottom: 1px solid #C8C8C8 !important;
+}
+
+td:has(.smallfont .postbit_box) .postbit_box {
+    display: none;
+}
+
+td:has(.smallfont .postbit_box) td.alt2 img {
+    width: 3em;
+    height: 3em;
+    border-radius: 100px;
+}
+.tfoot:has(select[name=styleid]) {
+    display: none;
+}
+.tfoot {
+    background: white !important;
+}
+small {
+    font-size: 0.7em !important;
+}
+form[action="search.php"] input[name=query] {
+    width: 15em !important;
+}
+input[type=text] {
+    padding: 10px 21px;
+    margin: 0 10px;
+    border-radius: 5px;
+    border: 2px solid #C8C8C8;
+}
+input::placeholder {
+    color: #C8C8C8;
+}
+input[type=text]:focus {
+    border-color: #007CFF;
+}
+.page #content .tborder {
+    border-radius: 15px !important;
+    overflow: hidden;
+    border: 1px solid #C8C8C8 !important;
+}

@@ -1,0 +1,22 @@
+{
+    "name": "AwesomeRead",
+    "version": "1.0",
+    "description": "A modern and opinionated theme for the MobileRead.com Forums. Not affiliated with MR!",
+    "manifest_version": 3,
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "host_permissions": [
+        "*://*.mobileread.com/*"
+    ],
+    "content_scripts": [
+        {
+        "matches": [
+            "*://*.mobileread.com/*"
+        ],
+        "css": ["style.css"],
+        "js": ["script.js"]
+        }
+    ]
+}
