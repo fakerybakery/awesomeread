@@ -17,12 +17,23 @@ window.onload = function() {
         t.textContent = "Posted by " + els[i].querySelector('strong').textContent;
         els[i].parentElement.appendChild(t);
     }
-    /*Check If Logged IN*/
     
+//    if (document.querySelectorAll('.header_container .header table tbody tr[align=center] .vbmenu_control')) {
+//        console.log('Loggedin');
+//    } else {
+//        console.log('LoggedinNot');
+//    }
     if (document.querySelector('form[action="search.php"] input[name=query], form[action="forums/search.php"] input[name=query]')) {
         document.querySelector('form[action="search.php"] input[name=query], form[action="forums/search.php"] input[name=query').setAttribute('placeholder', 'Search Forums...');
     }
     if (document.querySelector('.tfoot .smallfont strong')) {
         document.querySelector('.tfoot .smallfont strong').innerHTML += ' - <a href="javascript:alert(\'Website styling enhanced with AwesomeRead, an independent browser extension by mrfakename. AwesomeRead is not affiliated with MobileRead forums. If you like AwesomeRead, please give us a review on your browser extension store!\')">AwesomeRead</a> - <a href="https://github.com/fakerybakery/awesomeread" target="_blank">AwesomeRead GitHub</a>';
+    }
+    /*Check If Logged IN*/
+    if (!document.querySelectorAll('.header_container td.vbmenu_control')[6]) {
+        if (!window.location.href.includes('forums/register.php') && !window.location.href.includes('forums/login.php')) {
+            document.head.innerHTML = '<title>Please Log In</title>';
+            document.body.innerHTML = '<h1>Please Login</h1><p>AwesomeRead only works for logged-in users. If you would not like to login, please disable AwesomeRead.</p>';
+        }
     }
 }

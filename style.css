@@ -7,6 +7,10 @@
     outline: none;
 }
 
+h1 {
+    font-size: 2em;
+}
+
 body {
     /*    background-color: #080808 !important;*/
     background: #F3F3F3 !important;

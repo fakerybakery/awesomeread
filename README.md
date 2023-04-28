@@ -18,6 +18,7 @@ I'm planning to publish this to the Chrome Web Store soon, but for now, download
 * ~~Fix styling of the user who posted a post when not logged in~~ - I gave up. I'll just make login required.
 * Fix styling when editing post
 * Make it look less horrific
+* Support multiple post view modes
 
 ## Bugs
 Please create a GitHub issue to report bugs. Thank you!
