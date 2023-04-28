@@ -19,6 +19,7 @@ I'm planning to publish this to the Chrome Web Store soon, but for now, download
 * Fix styling when editing post
 * Make it look less horrific
 * Support multiple post view modes
+* Change the Edit/Post buttons
 
 ## Bugs
 Please create a GitHub issue to report bugs. Thank you!
