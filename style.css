@@ -42,6 +42,10 @@ div:has(> .bigusername) img.inlineimg {
     overflow: hidden;
     border: 1px solid #C8C8C8 !important;
 }
+/* for development testing */
+#posts .page div > table:has(.amzn-native-content), .amzn-native-container {
+    opacity: 15% !important;
+}
 
 #posts .page div > table .tbody {
     background: white !important;
@@ -110,6 +114,27 @@ td:has(> .vb_postbit) .smallfont strong {
 
 #posts .page div div .tborder .thead:has(.normal) {
     display: none;
+}
+#posts .page > div > div > table > tbody > tr:first-of-type {
+    display: none;
+}
+#posts .page > div > div > table > tbody hr {
+    display: none;
+}
+/* just for testing */
+.adsbygoogle {
+    display: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    position: absolute !important;
+    top: -1000000%;
+    visibility: hidden !important;
+    filter: alpha(opacity=0) !important;
+    transform: scale(0) !important;
+
+}
+.vbmenu_control {
+    color: black !important;
 }
 
 a {
@@ -225,11 +250,31 @@ td:has(.smallfont .postbit_box) {
     border-bottom: 1px solid #C8C8C8 !important;
 }
 
-td:has(.smallfont .postbit_box) .postbit_box {
-    display: none;
+td:has(.smallfont .postbit_box) .postbit_box, #posts .page .tborder tr[valign=top] {
+    display: block !important;
+}
+td:has(.smallfont .postbit_box) .postbit_box, #posts .page .tborder tr[valign=top] .alt2 div:has(.bigusername) {
+/*    background: red !important;*/
+    display: inline-block !important;
+}
+td:has(.smallfont .postbit_box) .postbit_box, #posts .page .tborder tr[valign=top] .alt2 .smallfont:has(img) {
+    display: inline-block !important;
 }
 
-td:has(.smallfont .postbit_box) td.alt2 img {
+td:has(.smallfont .postbit_box) .postbit_box, #posts .page .tborder tr[valign=top] .alt2 .smallfont:has(br):has(div:nth-child(2)) {
+    display: none !important;
+}
+
+td:has(.smallfont .postbit_box) .postbit_box, #posts .page .tborder tr[valign=top] .alt2 .inlineimg {
+    display: none;
+}
+td:has(.smallfont .postbit_box) .postbit_box, #posts .page .tborder tr[valign=top] .alt2 {
+    width: 100% !important;
+    display: block !important;
+    border-bottom: 1px solid #C8C8C8 !important;
+}
+
+td td.alt2 img, #posts .page .tborder tr[valign=top] td.alt2 .smallfont a img {
     width: 3em;
     height: 3em;
     border-radius: 100px;

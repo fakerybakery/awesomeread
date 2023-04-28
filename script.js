@@ -17,6 +17,8 @@ window.onload = function() {
         t.textContent = "Posted by " + els[i].querySelector('strong').textContent;
         els[i].parentElement.appendChild(t);
     }
+    /*Check If Logged IN*/
+    
     if (document.querySelector('form[action="search.php"] input[name=query], form[action="forums/search.php"] input[name=query]')) {
         document.querySelector('form[action="search.php"] input[name=query], form[action="forums/search.php"] input[name=query').setAttribute('placeholder', 'Search Forums...');
     }
