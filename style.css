@@ -354,14 +354,15 @@ input[type=text]:focus, input[type=password]:focus {
     position: fixed;
     top: -10000vh;
 }
-.vbmenu_option:hover * {
-    background: #0087FF !important;
-}
-.vbmenu_option {
+
+.vbmenu_option a, .vbmenu_option {
     background: #2699FF !important;
     color: white !important;
 }
-.vbmenu_option * {
+.vbmenu_option:hover a {
+    background: #0087FF !important;
+}
+.vbmenu_option a {
     color: white !important;
 }
 @media (prefers-color-scheme: dark) {
