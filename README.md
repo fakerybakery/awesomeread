@@ -15,8 +15,9 @@ I'm planning to publish this to the Chrome Web Store soon, but for now, download
 * Add more styling for the post lists/search results
 * Better styling the homepage
 * Style the "Menus" - e.g. "Forum Tools" or "Search this Forum" menu...
-* Fix styling of the user who posted a post when not logged in
+* ~~Fix styling of the user who posted a post when not logged in~~ - I gave up. I'll just make login required.
 * Fix styling when editing post
+* Make it look less horrific
 
 ## Bugs
 Please create a GitHub issue to report bugs. Thank you!
