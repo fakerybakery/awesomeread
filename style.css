@@ -8,7 +8,7 @@
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 2em !important;
 }
 
 body {
@@ -265,12 +265,22 @@ td:has(.smallfont .postbit_box) .postbit_box, #posts .page .tborder tr[valign=to
     display: inline-block !important;
 }
 
-td:has(.smallfont .postbit_box) .postbit_box, #posts .page .tborder tr[valign=top] .alt2 .smallfont:has(br):has(div:nth-child(2)) {
+.postbit_box {
+    display: none !important;
+    visibility: hidden !important;
+    width: 0;
+    position: fixed;
+    top: -10000vh;
+    left: -10000vh;
+}
+td[valign=top]:has(> .smallfont .postit_box) {
     display: none !important;
 }
-
+.smallfont:has(> .postit_box) {
+    display: none !important;
+}
 td:has(.smallfont .postbit_box) .postbit_box, #posts .page .tborder tr[valign=top] .alt2 .inlineimg {
-    display: none;
+    display: none !important;
 }
 td:has(.smallfont .postbit_box) .postbit_box, #posts .page .tborder tr[valign=top] .alt2 {
     width: 100% !important;

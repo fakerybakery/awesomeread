@@ -33,7 +33,7 @@ window.onload = function() {
     if (!document.querySelectorAll('.header_container td.vbmenu_control')[6]) {
         if (!window.location.href.includes('forums/register.php') && !window.location.href.includes('forums/login.php')) {
             document.head.innerHTML = '<title>Please Log In</title>';
-            document.body.innerHTML = '<h1>Please Login</h1><p>AwesomeRead only works for logged-in users. If you would not like to login, please disable AwesomeRead.</p>';
+            document.body.innerHTML = '<h1>Please Login</h1><p>AwesomeRead only works for logged-in users. If you would not like to login, please disable AwesomeRead.</p><form action="/forums/login.php?do=login" method="post"><p>Your Username:</p><input type="text" name="vb_login_username" placeholder="Your Username..."><p>Your Password:</p><input type="password" name="vb_login_password" placeholder="Your Password..."><input type="hidden" name="s"><input type="hidden" name="securitytoken" value="guest"><input type="hidden" name="do" value="login"><p><label for="cb_cookieuser_navbar"><input type="checkbox" name="cookieuser" value="1" checked>Remember Me?</label><p><button type="submit">Login</button></form>';
         }
     }
 }
