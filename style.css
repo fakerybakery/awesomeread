@@ -364,3 +364,16 @@ input[type=text]:focus, input[type=password]:focus {
 .vbmenu_option * {
     color: white !important;
 }
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #181818 !important;
+    }
+    #container, .center, .page {
+        background: #2E2E2E !important;
+        color: white !important;
+    }
+    #posts > .center > .page > div > table {
+        background: #5E5E5E !important;
+        color: white !important;
+    }
+}
