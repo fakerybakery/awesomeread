@@ -20,6 +20,7 @@ I'm planning to publish this to the Chrome Web Store soon, but for now, download
 * Make it look less horrific
 * Support multiple post view modes
 * Change the Edit/Post buttons
+* Support dark mode
 
 If you know HTML + CSS + JS, please make a PR!
 

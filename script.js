@@ -2,7 +2,7 @@
 
 
 window.onload = function() {
-    var elements = document.querySelectorAll('.tborder .vbmenu_control a, .button:not(input[type=text])');
+    var elements = document.querySelectorAll('.tborder .vbmenu_control a, .button:not(input[type=text]), .vbmenu_option');
     for (var i = 0; i < elements.length; i++) {
         elements[i].addEventListener('mousedown', function(e) {
             ripplet(e);

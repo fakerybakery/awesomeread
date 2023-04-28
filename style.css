@@ -331,3 +331,36 @@ input[type=text]:focus, input[type=password]:focus {
     overflow: hidden;
     border: 1px solid #C8C8C8 !important;
 }
+
+.vbmenu_popup {
+/*    border-radius: 15px;*/
+    overflow: hidden !important;
+    border: 0 !important;
+    padding: 0 !important;
+    background: transparent;
+    clip: none !important;
+    box-shadow: 0 !important;
+}
+.vbmenu_popup .thead {
+    background: #0068FF;
+    color: white;
+}
+.vbmenu_popup img {
+    display: none !important;
+    opacity: 0% !important;
+}
+.vbmenu_option img {
+    display: none !important;
+    position: fixed;
+    top: -10000vh;
+}
+.vbmenu_option:hover * {
+    background: #0087FF !important;
+}
+.vbmenu_option {
+    background: #2699FF !important;
+    color: white !important;
+}
+.vbmenu_option * {
+    color: white !important;
+}
