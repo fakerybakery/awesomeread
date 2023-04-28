@@ -21,5 +21,7 @@ I'm planning to publish this to the Chrome Web Store soon, but for now, download
 * Support multiple post view modes
 * Change the Edit/Post buttons
 
+If you know HTML + CSS + JS, please make a PR!
+
 ## Bugs
 Please create a GitHub issue to report bugs. Thank you!
